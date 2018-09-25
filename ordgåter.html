@@ -6,21 +6,58 @@
 </head>
 <body>
 <div id="laster">Laster ordliste...</div>
-<button onclick="visGåte()">Vis gåte</button>
+<button onclick="visGåte()">Lag gåte</button>
+<div id="gåte"></div>
+<button onclick="visLøsning()" style="display: none;">Vis løsning</button>
     <script>
-        var ordliste;
+        var _ordliste, _ord1, _ord2;
+        var _gåteDiv = document.getElementById('gåte');
 
         function visGåte() {
-            console.log('hei');
-            var tilfeldigOrdIndeks = Math.floor(Math.random() * ordliste.length);
-            console.log(tilfeldigOrdIndeks);
+            _ord1 = tilfeldigOrd();
+            var lengde = 3;
+            var sisteDel = sluttenAvOrdet(_ord1, lengde);
+            _ord2 = tilfeldigOrdSomStarterPå(sisteDel);
+            var gåteText = maskerOrd(_ord1, lengde, false)
+                   + ' ' + maskerOrd(_ord2, lengde, true);
+            _gåteDiv.innerHTML = gåteText;
+            document.getElementsByTagName('button')[1].style.display = 'block';
+        }
+
+        function visLøsning() {
+            _gåteDiv.innerHTML += '<br/>' + _ord1 + ' ' + _ord2;
+        }
+
+        function maskerOrd(ord, lengde, maskerFraStart){
+            return maskerFraStart
+                ? lagMaskering(lengde) + ord.substr(lengde)
+                : ord.substr(0, ord.length-lengde) + lagMaskering(lengde);
+        }
+
+        function lagMaskering(lengde, tmp){
+            return lengde <=0 ? tmp : lagMaskering(lengde-1, (tmp ? tmp : '' ) + '?')
+        }
+
+        function tilfeldigOrdSomStarterPå(start) {
+            var filtrertOrdliste = _ordliste.filter((ord)=>ord.startsWith(start));
+            var tilfeldigOrdIndeks = Math.floor(Math.random() * filtrertOrdliste.length);
+            return filtrertOrdliste[tilfeldigOrdIndeks];
+        }
+
+        function tilfeldigOrd() {
+            var tilfeldigOrdIndeks = Math.floor(Math.random() * _ordliste.length);
+            return _ordliste[tilfeldigOrdIndeks];
+        }
+
+        function sluttenAvOrdet(ord, lengde){
+            return ord.substring(ord.length-lengde);
         }
 
         function lagreOrdliste(liste){
-            ordliste = liste;
-            document.getElementById('laster').innerHTML = 'Ordliste lastet.' + liste.length + ' ord.';
+            _ordliste = liste;
+            document.getElementById('laster').innerHTML = liste.length + ' ord';
         }
     </script>
-    <script src="https://getacademy.github.io/LittOmKoding/ordliste.js"/>
+    <script src="https://getacademy.github.io/LittOmKoding/ordliste.js"></script>
 </body>
 </html>
