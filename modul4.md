@@ -9,5 +9,6 @@ tre som nå.
 1. Endre programmet så det også kan velges ord som er lenger enn ni bokstaver. 
 Velg en øvre grense selv.  
 1. Ta bort kravet om at  det som er felles er et ord i seg selv. 
+1. Sørg for at om man trykker på knappen "Vis løsning", så fjernes denne knappen igjen. 
 
 
