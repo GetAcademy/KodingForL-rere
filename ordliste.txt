@@ -16877,7 +16877,6 @@ var ordliste = [
 'delkredere',
 'delkrederekonto',
 'delkultur',
-'dell'arte',
 'delleverandør',
 'delløsning',
 'delløysing',
