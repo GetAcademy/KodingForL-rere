@@ -1,3 +1,5 @@
+# Oppgaver i HTML, CSS og Javascript
+
 1. Oppgave 1 - Ta utgangspunkt i <a href="oppgave 1 - startkode.html">oppgave 1 - startkode.htm</a>. Endre slik at om man trykker på den første teksten, så vises teksten "Feil!"
 rett etter knappen. (Det vil si i b-taggen med 	id="feedback1"). 
 

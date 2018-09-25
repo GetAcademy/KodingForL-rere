@@ -1,4 +1,6 @@
-# General Problem-Solving Techniques 
+# Grunnferdigheter og problemløsingsteknikker i alle programmeringsspråk
+
+## General Problem-Solving Techniques 
 hentet fra: "Think Like a Programmer: An Introduction to Creative Problem Solving" 
 Aug 12, 2012
 by V. Anton Spraul
@@ -14,7 +16,7 @@ http://thorpsci.weebly.com/uploads/1/7/0/0/17001640/think_like_a_programmer.pdf
  - Experiment 
  - Don’t Get Frustrated 
 
-# Grunnferdigheter i boka
+## Grunnferdigheter i boka
 Noen av ferdighetene er helt spesifikke på Javascript-programmering
 mot en web-side. Disse er merket mer klappende hender: 👏
 
@@ -52,7 +54,7 @@ med begge symbolene.
 ### 💪 Ferdighet 25: Løkker
 ### 💪 Ferdighet 24: Tabeller
 
-# Mer generelt - grunnferdigheter i "ren" programmering
+## Mer generelt - grunnferdigheter i "ren" programmering
 
 ### Kalle innebygde funksjoner
 ### Parametre: Sende med konkrete verdier

@@ -1,4 +1,4 @@
-# Intro til HTML, CSS og Javascript
+# Intro + HTML, CSS og Javascript
 
 1. Gjennomgang av grunnleggende HTML, CSS og Javascript
 

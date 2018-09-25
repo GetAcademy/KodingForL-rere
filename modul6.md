@@ -1,0 +1,1 @@
+Hva trenger dere for å komme i gang med programmering?
