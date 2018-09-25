@@ -1,23 +1,10 @@
-# Intro til HTML, CSS og Javascript
+Tid  | Emne  
+---- |  ---- 
+17:00 - 17:25 | Intro til HTML, CSS og Javascript 
+17:30 - 17:55 | Oppgaver i HTML, CSS og Javascript 
+18:00 - 18:25 | Grunnferdigheter og problemløsingsteknikke alle programmeringsspråk 
+18:30 - 18:55 | Oppgave i “ren programmering” 
+19:00 - 19:25 | Programmeringsparadigmer og ulike språk og contexter
+19:30 - 20:00 | Spørsmål og svar. Hva er det eventuelt behov for videre?
 
-
-1. Gjennomgang av grunnleggende HTML, CSS og Javascript
-1. Oppgave 1
-    1. Ta utgangspunkt i <a href="oppgave 1 - startkode.html">oppgave 1 - startkode.htm</a>	
-	1. Endre slik at om man trykker på 
-	den første teksten, så vises teksten "Feil!"
-	rett etter knappen. (Det vil si i b-taggen med 
-	id="feedback1"). 
-	<br/>_Løsningsforslag_: 	
-	<a href="oppgave 1 - løsning del 1.html">oppgave 1 - løsning del 1.html</a>
-	1. Gjør tilsvarende endring også for de to 
-	andre knappene, men med teksten "Riktig!" for den
-	som er riktig.	
-	<br/>_Løsningsforslag_: 	
-	<a href="oppgave 1 - løsning komplett.html">oppgave 1 - løsning komplett.html</a>
-	<br/>
-  
-
-<a href="KodingForL-rere/utkast%20Javascript-bok.pdf">Bok om HTML, Javascript og CSS (kun de 24 første sidene) </a>
- 
 
