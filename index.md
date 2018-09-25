@@ -1,10 +1,10 @@
 Tid  | Emne  
 ---- |  ---- 
-17:00 - 17:25 | <a href="modul1.md">Intro til HTML, CSS og Javascript</a>
-17:30 - 17:55 | Oppgaver i HTML, CSS og Javascript 
-18:00 - 18:25 | Grunnferdigheter og problemløsingsteknikke alle programmeringsspråk 
-18:30 - 18:55 | Oppgave i “ren programmering” 
-19:00 - 19:25 | Programmeringsparadigmer og ulike språk og contexter
-19:30 - 20:00 | Spørsmål og svar. Hva er det eventuelt behov for videre?
+17:00 - 17:25 | <a href="modul1.md">Intro + HTML, CSS og Javascript</a>
+17:30 - 17:55 | <a href="modul2.md">Oppgaver i HTML, CSS og Javascript </a>
+18:00 - 18:25 | <a href="modul3.md">Grunnferdigheter og problemlÃ¸singsteknikker i alle programmeringssprÃ¥k </a>
+18:30 - 18:55 | <a href="modul4.md">Oppgave i "ren programmering" </a>
+19:00 - 19:25 | <a href="modul5.md">Programmeringsparadigmer og ulike sprï¿½k og contexter</a>
+19:30 - 20:00 | <a href="modul6.md">Spï¿½rsmï¿½l og svar. Hva er det eventuelt behov for videre?</a>
 
 
