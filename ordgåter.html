@@ -5,12 +5,20 @@
     <title>Ordgåter</title>
 </head>
 <body>
+<div id="laster">Laster ordliste...</div>
 <button onclick="visGåte()">Vis gåte</button>
     <script>
+        var ordliste;
+
         function visGåte() {
             console.log('hei');
             var tilfeldigOrdIndeks = Math.floor(Math.random() * ordliste.length);
             console.log(tilfeldigOrdIndeks);
+        }
+
+        function lagreOrdliste(liste){
+            ordliste = liste;
+            document.getElementById('laster').innerHTML = 'Ordliste lastet.' + liste.length + ' ord.';
         }
     </script>
     <script src="https://getacademy.github.io/LittOmKoding/ordliste.js"/>

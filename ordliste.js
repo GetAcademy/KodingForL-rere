@@ -1,4 +1,4 @@
-ordliste( [
+lagreOrdliste( [
 'a',
 'á',
 'à',
