@@ -37,8 +37,8 @@
                 ord.substr(0, ord.length - lengde) + lagMaskering(lengde);
         }
 
-        function lagMaskering(lengde, tmp) {
-            return lengde <= 0 ? tmp : lagMaskering(lengde - 1, (tmp ? tmp : '') + '?');
+        function lagMaskering(lengde, tmp = '') {
+            return lengde <= 0 ? tmp : lagMaskering(lengde - 1, tmp + '?');
         }
 
         function tilfeldigOrdSomStarterPå(start) {
