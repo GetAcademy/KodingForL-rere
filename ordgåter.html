@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Ordgåter</title>
 </head>
 <body>
-<div id="laster">Laster ordliste...</div>
-<button onclick="visGåte()">Lag gåte</button>
-<div id="gåte"></div>
-<button onclick="visLøsning()" style="display: none;">Vis løsning</button>
+    <div id="laster">Laster ordliste...</div>
+    <button onclick="visGåte()">Lag gåte</button>
+    <div id="gåte"></div>
+    <button onclick="visLøsning()" style="display: none;">Vis løsning</button>
     <script>
         var _ordlisteAlleOrd, _ordlisteUtvalgteLengder, _ord1, _ord2;
         var _gåteDiv = document.getElementById('gåte');
 
         function visGåte() {
             var sisteDel = '';
+            var lengde = 3;
             do {
                 _ord1 = tilfeldigOrd();
-                var lengde = 3;
                 sisteDel = sluttenAvOrdet(_ord1, lengde);
                 _ord2 = tilfeldigOrdSomStarterPå(sisteDel);
             } while (!_ordlisteAlleOrd.includes(sisteDel) || _ord2.length == 0);
@@ -38,7 +38,7 @@
         }
 
         function lagMaskering(lengde, tmp) {
-            return lengde <= 0 ? tmp : lagMaskering(lengde - 1, (tmp ? tmp : '') + '?')
+            return lengde <= 0 ? tmp : lagMaskering(lengde - 1, (tmp ? tmp : '') + '?');
         }
 
         function tilfeldigOrdSomStarterPå(start) {
