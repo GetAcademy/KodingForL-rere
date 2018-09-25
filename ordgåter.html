@@ -21,8 +21,8 @@
                 sisteDel = sluttenAvOrdet(_ord1, lengde);
                 _ord2 = tilfeldigOrdSomStarterPå(sisteDel);
             } while (!_ordlisteAlleOrd.includes(sisteDel) || _ord2.length == 0);
-            var gåteText = maskerOrd(_ord1, lengde, false) +
-                ' ' + maskerOrd(_ord2, lengde, true);
+            var gåteText = maskerOrd(_ord1, lengde, false)
+                   + ' ' + maskerOrd(_ord2, lengde, true);
             _gåteDiv.innerHTML = gåteText;
             document.getElementsByTagName('button')[1].style.display = 'block';
         }
