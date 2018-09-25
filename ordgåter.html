@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Ordgåter</title>
-    <!--<script src="https://getacademy.github.io/LittOmKoding/ordliste.txt"/>-->
-    <script src="https://getacademy.github.io/LittOmKoding/ordliste.js"/>
 </head>
-<body onload="visGåte()">
+<body>
+<button onclick="visGåte()">Vis gåte</button>
     <script>
         function visGåte() {
+            console.log('hei');
             var tilfeldigOrdIndeks = Math.floor(Math.random() * ordliste.length);
-            document.write(tilfeldigOrdIndeks);
+            console.log(tilfeldigOrdIndeks);
         }
     </script>
+    <script src="https://getacademy.github.io/LittOmKoding/ordliste.js"/>
 </body>
 </html>

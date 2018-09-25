@@ -1,4 +1,4 @@
-var ordliste = [
+ordliste( [
 'a',
 'á',
 'à',
@@ -135229,4 +135229,4 @@ var ordliste = [
 'åvelte',
 'åverk',
 'åvirke',
-'åvokster'];
+'åvokster']);
