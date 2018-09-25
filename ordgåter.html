@@ -10,16 +10,19 @@
 <div id="gåte"></div>
 <button onclick="visLøsning()" style="display: none;">Vis løsning</button>
     <script>
-        var _ordliste, _ord1, _ord2;
+        var _ordlisteAlleOrd, _ordlisteUtvalgteLengder, _ord1, _ord2;
         var _gåteDiv = document.getElementById('gåte');
 
         function visGåte() {
-            _ord1 = tilfeldigOrd();
-            var lengde = 3;
-            var sisteDel = sluttenAvOrdet(_ord1, lengde);
-            _ord2 = tilfeldigOrdSomStarterPå(sisteDel);
-            var gåteText = maskerOrd(_ord1, lengde, false)
-                   + ' ' + maskerOrd(_ord2, lengde, true);
+            var sisteDel = '';
+            do {
+                _ord1 = tilfeldigOrd();
+                var lengde = 3;
+                sisteDel = sluttenAvOrdet(_ord1, lengde);
+                _ord2 = tilfeldigOrdSomStarterPå(sisteDel);
+            } while (!_ordlisteAlleOrd.includes(sisteDel) || _ord2.length == 0);
+            var gåteText = maskerOrd(_ord1, lengde, false) +
+                ' ' + maskerOrd(_ord2, lengde, true);
             _gåteDiv.innerHTML = gåteText;
             document.getElementsByTagName('button')[1].style.display = 'block';
         }
@@ -28,33 +31,34 @@
             _gåteDiv.innerHTML += '<br/>' + _ord1 + ' ' + _ord2;
         }
 
-        function maskerOrd(ord, lengde, maskerFraStart){
-            return maskerFraStart
-                ? lagMaskering(lengde) + ord.substr(lengde)
-                : ord.substr(0, ord.length-lengde) + lagMaskering(lengde);
+        function maskerOrd(ord, lengde, maskerFraStart) {
+            return maskerFraStart ?
+                lagMaskering(lengde) + ord.substr(lengde) :
+                ord.substr(0, ord.length - lengde) + lagMaskering(lengde);
         }
 
-        function lagMaskering(lengde, tmp){
-            return lengde <=0 ? tmp : lagMaskering(lengde-1, (tmp ? tmp : '' ) + '?')
+        function lagMaskering(lengde, tmp) {
+            return lengde <= 0 ? tmp : lagMaskering(lengde - 1, (tmp ? tmp : '') + '?')
         }
 
         function tilfeldigOrdSomStarterPå(start) {
-            var filtrertOrdliste = _ordliste.filter((ord)=>ord.startsWith(start));
+            var filtrertOrdliste = _ordlisteUtvalgteLengder.filter((ord) => ord.startsWith(start));
             var tilfeldigOrdIndeks = Math.floor(Math.random() * filtrertOrdliste.length);
-            return filtrertOrdliste[tilfeldigOrdIndeks];
+            return filtrertOrdliste.length == 0 ? '' : filtrertOrdliste[tilfeldigOrdIndeks];
         }
 
         function tilfeldigOrd() {
-            var tilfeldigOrdIndeks = Math.floor(Math.random() * _ordliste.length);
-            return _ordliste[tilfeldigOrdIndeks];
+            var tilfeldigOrdIndeks = Math.floor(Math.random() * _ordlisteUtvalgteLengder.length);
+            return _ordlisteUtvalgteLengder[tilfeldigOrdIndeks];
         }
 
-        function sluttenAvOrdet(ord, lengde){
-            return ord.substring(ord.length-lengde);
+        function sluttenAvOrdet(ord, lengde) {
+            return ord.substring(ord.length - lengde);
         }
 
-        function lagreOrdliste(liste){
-            _ordliste = liste;
+        function lagreOrdliste(liste) {
+            _ordlisteAlleOrd = liste;
+            _ordlisteUtvalgteLengder = _ordlisteAlleOrd.filter(o => o.length >= 6 && o.length <= 8);
             document.getElementById('laster').innerHTML = liste.length + ' ord';
         }
     </script>
