@@ -13622,7 +13622,6 @@ var ordliste = [
 'brutalisering',
 'brutalitet',
 'brutilhenger',
-'brutter'n',
 'brutto',
 'bruttoareal',
 'bruttoavanse',

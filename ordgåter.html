@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordgåter</title>
+    <script src="https://getacademy.github.io/LittOmKoding/ordliste.txt"/>
+</head>
+<body onload="visGåte()">
+    <script>
+        function visGåte() {
+            var tilfeldigOrdIndeks = Math.floor(Math.random() * ordliste.length);
+            document.write(tilfeldigOrdIndeks);
+        }
+    </script>
+</body>
+</html>
