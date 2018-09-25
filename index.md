@@ -1,6 +1,6 @@
 Tid  | Emne  
 ---- |  ---- 
-17:00 - 17:25 | Intro til HTML, CSS og Javascript 
+17:00 - 17:25 | <a href="modul1.md">Intro til HTML, CSS og Javascript</a>
 17:30 - 17:55 | Oppgaver i HTML, CSS og Javascript 
 18:00 - 18:25 | Grunnferdigheter og problemløsingsteknikke alle programmeringsspråk 
 18:30 - 18:55 | Oppgave i “ren programmering” 
