@@ -4,6 +4,6 @@
 
   
 
-<a href="KodingForL-rere/utkast%20Javascript-bok.pdf">Bok om HTML, Javascript og CSS (kun de 24 første sidene) </a>
+<a href="utkast%20Javascript-bok.pdf">Bok om HTML, Javascript og CSS (kun de 24 første sidene) </a>
  
 
