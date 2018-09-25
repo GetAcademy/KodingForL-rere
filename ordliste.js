@@ -1,3 +1,4 @@
+var ordliste = [
 'a',
 'á',
 'à',
@@ -135228,4 +135229,4 @@
 'åvelte',
 'åverk',
 'åvirke',
-'åvokster',
+'åvokster'];

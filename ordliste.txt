@@ -23809,7 +23809,6 @@ var ordliste = [
 'faning',
 'fanken',
 'fankeren',
-'fanker'n',
 'fanklubb',
 'fanpost',
 'fans',
