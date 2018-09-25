@@ -8,3 +8,4 @@ som er riktig.
 
 1. _Løsningsforslag_ oppgave 2: <a href="oppgave 1 - løsning komplett.html">oppgave 1 - løsning komplett.html</a>
 
+1. 
